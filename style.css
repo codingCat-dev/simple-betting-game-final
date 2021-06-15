@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn,
+.btn:visited {
+  outline: none;
+  border: none;
+  width: 100%;
+  margin: 1rem auto;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #b33051;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.1rem;
+  transition: transform 0.3s linear;
+  text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
+}
+.btn:hover,
+.btn:visited:hover {
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  transform: translateY(-5%);
+}
+.btn:active,
+.btn:visited:active {
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
+  transform: translateY(-2%);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #3fba5b;
+  background: radial-gradient(circle, #3fba5b 4%, #3f792e 71%);
+  position: relative;
+}
+
+.credit {
+  padding: 3rem;
+  font-size: 2.5rem;
+  font-family: 'Roboto Slab', serif;
+  color: #f1f7ed;
+  font-weight: 300;
+}
+.credit-text {
+  margin-right: 2rem;
+  text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
+}
+.credit-ammount {
+  font-size: 3.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #b33051;
+}
+
+.input-container {
+  width: 30%;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  padding: 1rem;
+}
+@media only screen and (max-width: 50em) {
+  .input-container {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .input-container {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .input-container {
+    width: 70%;
+  }
+}
+.input-container label {
+  font-size: 2rem;
+  color: #f1f7ed;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
+}
+.input-container input,
+.input-container input:focus,
+.input-container input:visited {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
+  color: #b33051;
+  font-weight: bold;
+}
+
+.message-container {
+  color: #f1f7ed;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
+  height: 6rem;
+}
+
+.rules-container {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.rules-text {
+  font-size: 1.4rem;
+  color: #f1f7ed;
+  font-family: 'Roboto Slab', serif;
+  text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
+  line-height: 1.5;
+}
+
+.dice-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem;
+}
+
+.dice-number {
+  color: #f1f7ed;
+  font-size: 1.5rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+.dice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  height: 25rem;
+}
+
+.footer {
+  overflow: hidden;
+  background-color: #f1f7ed;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+}
+.footer-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer li {
+  color: #b33051;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+.footer li span {
+  font-size: 1.8rem;
+}
+.footer-link {
+  color: #b33051;
+}

@@ -145,7 +145,7 @@ ul {
 }
 
 .rules-container {
-  padding: 1rem 0;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -158,14 +158,15 @@ ul {
 }
 
 .dice-container {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50rem;
+  min-height: 20rem;
+  flex-grow: 1;
   width: 80%;
   margin: 0 auto;
-  position: relative;
+
   padding: 1rem;
 }
 
@@ -178,12 +179,9 @@ ul {
 }
 
 .dice {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25rem;
-  height: 25rem;
+  object-fit: cover;
+  width: 15rem;
+  height: 15rem;
 }
 
 .footer {
